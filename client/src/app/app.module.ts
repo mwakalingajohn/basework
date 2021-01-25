@@ -17,6 +17,7 @@ import {
   NbDialogModule,
   NbMenuModule,
   NbSidebarModule,
+  NbThemeModule,
   NbToastrModule,
   NbWindowModule,
 } from '@nebular/theme';
@@ -34,11 +35,9 @@ import {
     NbDialogModule.forRoot(),
     NbWindowModule.forRoot(),
     NbToastrModule.forRoot(),
-    NbChatModule.forRoot({
-      messageGoogleMapKey: 'AIzaSyA_wNuCzia92MAmdLRzmqitRGvCF7wCZPY',
-    }),
     CoreModule.forRoot(),
     ThemeModule.forRoot(),
+    // NbThemeModule.forRoot({ name: 'corporate' }),
   ],
   bootstrap: [AppComponent],
 })
